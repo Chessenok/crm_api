@@ -1,0 +1,81 @@
+## =======================================================================
+## Build and Compilation Outputs
+## =======================================================================
+[Bb]in/
+[Oo]bj/
+out/
+publish/
+[Ll]og/
+[Ll]ogs/
+
+## =======================================================================
+## IDE & Editor Specific Files
+## =======================================================================
+# Visual Studio
+.vs/
+*.user
+*.userossc
+*.sln.docstates
+*.suo
+*.userprefs
+*.cache
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# VS Code
+.vscode/
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/settings.json
+!.vscode/extensions.json
+
+## =======================================================================
+## Environment & Local Configuration Files
+## (Excludes secrets, local DB connections, and machine settings)
+## =======================================================================
+appsettings.Development.json
+appsettings.Local.json
+appsettings.Production.json
+appsettings.*.json
+!appsettings.json
+*.env
+*.env.*
+!.env.example
+
+## =======================================================================
+## NuGet Packages
+## =======================================================================
+*.nupkg
+*.snupkg
+**/packages/
+!**/packages/build/
+project.lock.json
+project.fragment.lock.json
+
+## =======================================================================
+## Testing & Code Coverage
+## =======================================================================
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+*_crashdump.dmp
+.coverage/
+
+## =======================================================================
+## Database & Local Storage
+## =======================================================================
+*.db
+*.sqlite
+*.sqlite3
+*.ldf
+*.mdf
+
+## =======================================================================
+## OS Generated Files
+## =======================================================================
+.DS_Store
+Thumbs.db
+desktop.ini
