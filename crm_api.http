@@ -1,0 +1,24 @@
+@crm_api_HostAddress = http://localhost:5144
+
+GET {{crm_api_HostAddress}}/health
+Accept: application/json
+
+###
+
+POST {{crm_api_HostAddress}}/demo/pairing-token
+Accept: application/json
+
+###
+
+POST {{crm_api_HostAddress}}/auth/pair
+Content-Type: application/json
+
+{
+  "pairingToken": "replace-with-demo-token",
+  "deviceInfo": {
+    "platform": "Android",
+    "model": "Development device",
+    "osVersion": "14",
+    "appVersion": "1.0.0"
+  }
+}

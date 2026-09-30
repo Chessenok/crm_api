@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/smesnoimaxim/Documents/flutplan/crm_api/wwwroot/app.js",
+      "PackagePath": "staticwebassets/app.js"
+    },
+    {
+      "Id": "/Users/smesnoimaxim/Documents/flutplan/crm_api/wwwroot/index.html",
+      "PackagePath": "staticwebassets/index.html"
+    },
+    {
+      "Id": "/Users/smesnoimaxim/Documents/flutplan/crm_api/wwwroot/style.css",
+      "PackagePath": "staticwebassets/style.css"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.crm_api.props",
+      "PackagePath": "build\\crm_api.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.crm_api.props",
+      "PackagePath": "buildMultiTargeting\\crm_api.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.crm_api.props",
+      "PackagePath": "buildTransitive\\crm_api.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.crm_api.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

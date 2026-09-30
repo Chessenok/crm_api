@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ECAP Demo - API Test Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <header class="top-bar">
+      <div class="logo">ECAP Agent</div>
+      <div id="connection-status" class="status-indicator disconnected">
+        <span class="dot"></span>
+        <span class="label">Not Connected</span>
+      </div>
+    </header>
+
+    <main>
+      <!-- Token Generator View -->
+      <section id="token-view" class="view active">
+        <div class="container">
+          <h1>API Token Generator</h1>
+          <p class="subtitle">Generate a pairing token to connect your phone to the demo dashboard</p>
+
+          <button id="generate-btn" class="primary-btn">
+            <span class="btn-icon">⚡</span>
+            Generate Token
+          </button>
+
+          <div id="token-result" class="hidden">
+            <div class="card">
+              <h2>Scan with Phone</h2>
+              <div id="qr-container">
+                <div id="qr-canvas"></div>
+              </div>
+              <div id="expiry-timer" class="expiry-badge"></div>
+            </div>
+
+            <div class="card token-details">
+              <h3>Token Details</h3>
+              <div class="detail-row">
+                <span class="detail-label">Token</span>
+                <span id="token-value" class="detail-value mono"></span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">API URL</span>
+                <span id="api-url-value" class="detail-value mono"></span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">Company</span>
+                <span id="company-value" class="detail-value mono"></span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">Expires</span>
+                <span id="expires-value" class="detail-value"></span>
+              </div>
+            </div>
+
+            <button id="copy-token-btn" class="secondary-btn">Copy Token</button>
+            <p class="hint">Open the ECAP Agent app and scan the QR code above, or paste the token</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dashboard View -->
+      <section id="dashboard-view" class="view hidden">
+        <div class="container">
+          <div class="dashboard-header">
+            <h1>Dashboard</h1>
+            <button id="logout-btn" class="ghost-btn">Logout</button>
+          </div>
+
+          <div class="clients-section">
+            <h2>Clients</h2>
+            <div id="clients-list" class="clients-grid"></div>
+          </div>
+
+          <div class="activity-section">
+            <h2>Recent Activity</h2>
+            <div id="activity-list" class="activity-list">
+              <p class="empty-state">No activity yet. Make a call to get started.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call Modal -->
+      <div id="call-modal" class="modal hidden">
+        <div class="modal-content">
+          <h2 id="modal-client-name"></h2>
+          <div class="modal-details" id="modal-client-details"></div>
+          <div class="modal-actions">
+            <button id="call-accept-btn" class="primary-btn">Call</button>
+            <button id="call-cancel-btn" class="ghost-btn">Cancel</button>
+          </div>
+          <div id="call-status" class="call-status hidden"></div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

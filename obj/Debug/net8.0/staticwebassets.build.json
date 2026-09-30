@@ -1,0 +1,77 @@
+{
+  "Version": 1,
+  "Hash": "5QmMjqWf9h7wAnikJaxDPTwBh8mBUsaHGXRyPh7hpIw=",
+  "Source": "crm_api",
+  "BasePath": "_content/crm_api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "crm_api/wwwroot",
+      "Source": "crm_api",
+      "ContentRoot": "/Users/smesnoimaxim/Documents/flutplan/crm_api/wwwroot/",
+      "BasePath": "_content/crm_api",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/smesnoimaxim/Documents/flutplan/crm_api/wwwroot/app.js",
+      "SourceId": "crm_api",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/smesnoimaxim/Documents/flutplan/crm_api/wwwroot/",
+      "BasePath": "_content/crm_api",
+      "RelativePath": "app.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/app.js"
+    },
+    {
+      "Identity": "/Users/smesnoimaxim/Documents/flutplan/crm_api/wwwroot/index.html",
+      "SourceId": "crm_api",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/smesnoimaxim/Documents/flutplan/crm_api/wwwroot/",
+      "BasePath": "_content/crm_api",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/index.html"
+    },
+    {
+      "Identity": "/Users/smesnoimaxim/Documents/flutplan/crm_api/wwwroot/style.css",
+      "SourceId": "crm_api",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/smesnoimaxim/Documents/flutplan/crm_api/wwwroot/",
+      "BasePath": "_content/crm_api",
+      "RelativePath": "style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/style.css"
+    }
+  ]
+}
