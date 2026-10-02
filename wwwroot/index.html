@@ -71,6 +71,21 @@
             <button id="logout-btn" class="ghost-btn">Logout</button>
           </div>
 
+          <div id="device-info-section" class="device-info-section hidden">
+            <h2>Connected Device</h2>
+            <div class="device-info-card">
+              <div class="device-icon"></div>
+              <div class="device-details">
+                <div class="device-name" id="device-name">Loading...</div>
+                <div class="device-meta" id="device-meta"></div>
+                <div class="device-status" id="device-status">
+                  <span class="status-dot connected"></span>
+                  <span>Online</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div class="clients-section">
             <h2>Clients</h2>
             <div id="clients-list" class="clients-grid"></div>
@@ -101,6 +116,7 @@
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/8.0.0/signalr.min.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
